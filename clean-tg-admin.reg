@@ -31,3 +31,39 @@ Windows Registry Editor Version 5.00
 
 ; ========== 我们之前创建的自定义项（可选清理） ==========
 [-HKEY_CURRENT_USER\Software\Telegram_AIADM (Custom)]
+
+
+
+Windows Registry Editor Version 5.00
+
+; ===== 系统级 URL 协议 / ProgID =====
+[-HKEY_LOCAL_MACHINE\Software\Classes\tg]
+[-HKEY_LOCAL_MACHINE\Software\Classes\TelegramAIADM.tg]
+[-HKEY_LOCAL_MACHINE\Software\Classes\tdesktop.tg]
+[-HKEY_LOCAL_MACHINE\Software\Classes\TelegramDesktop.tg]
+[-HKEY_LOCAL_MACHINE\Software\Classes\Telegram.tg]
+[-HKEY_LOCAL_MACHINE\Software\Classes\org.telegram.desktop]
+[-HKEY_LOCAL_MACHINE\Software\Classes\64gram.tg]
+[-HKEY_LOCAL_MACHINE\Software\Classes\org.64gram.desktop]
+[-HKEY_LOCAL_MACHINE\Software\Classes\tdesktop]
+[-HKEY_LOCAL_MACHINE\Software\Classes\org.telegram.messenger]
+
+; ===== Applications 兜底关联 =====
+[-HKEY_LOCAL_MACHINE\Software\Classes\Applications\Telegram.exe]
+[-HKEY_LOCAL_MACHINE\Software\Classes\Applications\64Gram.exe]
+
+; ===== 系统级“默认应用”能力注册 =====
+[-HKEY_LOCAL_MACHINE\Software\RegisteredApplications\Telegram Desktop]
+[-HKEY_LOCAL_MACHINE\Software\RegisteredApplications\TelegramDesktop]
+[-HKEY_LOCAL_MACHINE\Software\RegisteredApplications\64Gram]
+[-HKEY_LOCAL_MACHINE\Software\RegisteredApplications\Telegram_AIADM (Custom)]
+
+; ===== 开始菜单互联网客户端入口 =====
+[-HKEY_LOCAL_MACHINE\Software\Clients\StartMenuInternet\Telegram]
+[-HKEY_LOCAL_MACHINE\Software\Clients\StartMenuInternet\Telegram Desktop]
+[-HKEY_LOCAL_MACHINE\Software\Clients\StartMenuInternet\64Gram]
+[-HKEY_LOCAL_MACHINE\Software\Clients\StartMenuInternet\Telegram_AIADM (Custom)]
+
+; ===== App Paths =====
+[-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\Telegram.exe]
+[-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\64Gram.exe]
